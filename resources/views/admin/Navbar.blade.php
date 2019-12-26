@@ -34,8 +34,12 @@
 		display: inline-block;
 	}
 
-	#home:hover .dropdown-content{
+	.dropdown:hover .dropdown-content{
 		display: block;
+	}
+
+	.link:hover{
+		color:#f9f6f7;
 	}
 </style>
 
@@ -45,8 +49,8 @@
 	  <a class="navbar-brand" href="#">KOPELLA</a>
 
 	  <!-- Links -->
-	  <ul class="navbar-nav dropdown">
-	    <li class="item">
+	  <ul class="navbar-nav">
+	    <li class="item dropdown">
 	      <a class="link" id="home" style="text-decoration:none;" href="#">Home</a>
 
 		  <div class="dropdown-content">

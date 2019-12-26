@@ -21,12 +21,20 @@
 	}
 
 	.dropdown-content {
-		display: none;
+		height:0px;
+		opacity:0;
 		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
+		background-color: #28c3d4;
+		color:white;
+		min-width: 200px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 1;
+		border-radius:5px;
+		padding:1vh;
+		
+		top:5vh;
+		left:-2vh;
+		transition: all .5s ease;
 	}
 
 	.dropdown {
@@ -35,7 +43,9 @@
 	}
 
 	.dropdown:hover .dropdown-content{
-		display: block;
+		height:120px;
+		opacity:1;
+		transform: translateY(0);
 	}
 
 	.link:hover{
@@ -43,7 +53,7 @@
 	}
 </style>
 
-<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #3e64ff;">
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #248ea9;">
 	<div class="container">
   <!-- Brand -->
 	  <a class="navbar-brand" href="#">KOPELLA</a>
@@ -52,9 +62,22 @@
 	  <ul class="navbar-nav">
 	    <li class="item dropdown">
 	      <a class="link" id="home" style="text-decoration:none;" href="#">Home</a>
-
 		  <div class="dropdown-content">
-		  	<p>Ini adalah Home</p>
+		  	<p>Ini adalah penjelasan isi menu Home</p>
+		  </div>
+	    </li>
+
+		<li class="item dropdown">
+	      <a class="link" id="home" style="text-decoration:none;" href="#">Pegawai</a>
+		  <div class="dropdown-content">
+		  	<p>Menu Pegawai memiliki 2 table yaitu table kasir dan admin</p>
+		  </div>
+	    </li>
+
+		<li class="item dropdown">
+	      <a class="link" id="home" style="text-decoration:none;" href="#">Data</a>
+		  <div class="dropdown-content">
+		  	<p>Data barang merupakan menu yang berisi tentang data barang serta data kategori</p>
 		  </div>
 	    </li>
 		

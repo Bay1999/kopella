@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('admin/navbar');
+    return view('admin/pegawai');
 });

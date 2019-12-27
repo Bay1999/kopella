@@ -72,8 +72,8 @@
                 </div>
             </li>
             
-            <li class="{{ $elementActive == 'tables' ? 'active' : '' }}">
-                <a href="{{ route('page.index', 'tables') }}">
+            <li class="{{ $elementActive == 'transaksi' ? 'active' : '' }}">
+                <a href="{{ route('page.index', 'transaksi') }}">
                     <i class="nc-icon nc-cart-simple"></i>
                     <p>{{ __('Transaksi') }}</p>
                 </a>

@@ -3,19 +3,20 @@
     'elementActive' => 'user',
 ])
 
+
 @section('content')
     <div class="content">
         <div class="container-fluid mt--7">
             <div class="row">
                 <div class="col-xl-12 order-xl-1">
-                    <div class="card bg-secondary shadow">
-                        <div class="card-header bg-white border-0">
+                    <div class="card shadow">
+                        <div class="card-header bg-info border-0">
                             <div class="row align-items-center">
                                 <div class="col-8">
-                                    <h3 class="mb-0">{{ __('User Management') }}</h3>
+                                    <h3 class="mb-0 text-light">{{ __('User Management') }}</h3>
                                 </div>
                                 <div class="col-4 text-right">
-                                    <a href="{{ route('user.index') }}" class="btn btn-sm btn-primary">{{ __('Back to list') }}</a>
+                                    <a href="{{ route('user.index') }}" class="btn btn-sm btn-info">{{ __('Back to list') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +63,7 @@
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
+                                        <button type="submit" class="btn btn-info mt-4">{{ __('Save') }}</button>
                                     </div>
                                 </div>
                             </form>

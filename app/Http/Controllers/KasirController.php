@@ -32,11 +32,11 @@ class KasirController extends Controller
     /**
      * Store a newly created user in storage
      *
-     * @param  \App\Http\Requests\UserRequest  $request
+     * @param  \App\Http\Requests\KasirRequest  $request
      * @param  \App\User  $model
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(UserRequest $request, User $model)
+    public function store(KasirRequest $request, User $model)
     {
         $model->create($request->merge(['password' => Hash::make($request->get('password'))])->all());
 
@@ -57,11 +57,11 @@ class KasirController extends Controller
     /**
      * Update the specified user in storage
      *
-     * @param  \App\Http\Requests\UserRequest  $request
+     * @param  \App\Http\Requests\KasirRequest  $request
      * @param  \App\User  $user
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(UserRequest $request, User $user)
+    public function update(KasirRequest $request, User $user)
     {
         $hasPassword = $request->get('password') ? 1 : 0;
         $user->update(
@@ -69,7 +69,7 @@ class KasirController extends Controller
                 ->except([$hasPassword ? '' : 'password']
         ));
 
-        return redirect()->route('user.index')->withStatus(__('User successfully updated.'));
+        return redirect()->route('kasir.index')->withStatus(__('User successfully updated.'));
     }
 
     /**
@@ -82,6 +82,6 @@ class KasirController extends Controller
     {
         $user->delete();
 
-        return redirect()->route('user.index')->withStatus(__('User successfully deleted.'));
+        return redirect()->route('kasir.index')->withStatus(__('User successfully deleted.'));
     }
 }

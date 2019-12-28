@@ -17,7 +17,7 @@
                             </div>
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
-                                    <p class="card-category">Jumlah Produk</p>
+                                    <p class="card-category">Produk</p>
                                     <p class="card-title">20
                                         <p>
                                 </div>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
-                                    <p class="card-category">Jumlah Kategori</p>
+                                    <p class="card-category">Kategori</p>
                                     <p class="card-title">5
                                         <p>
                                 </div>
@@ -69,7 +69,7 @@
                             </div>
                             <div class="col-7 col-md-8">
                                 <div class="numbers">
-                                    <p class="card-category">Jumlah Transaksi</p>
+                                    <p class="card-category"> Transaksi</p>
                                     <p class="card-title">20
                                         <p>
                                 </div>

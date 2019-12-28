@@ -33,7 +33,7 @@
                             @endif
                         </div>
 
-                        <div class="table-responsive">
+                        <!-- <div class="table-responsive"> -->
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
                                     <tr>
@@ -79,7 +79,7 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                        </div>
+                        <!-- </div> -->
                         <div class="card-footer py-4">
                             <nav class="d-flex justify-content-end" aria-label="...">
                                 {{ $users->links() }}

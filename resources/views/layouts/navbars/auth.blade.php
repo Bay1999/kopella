@@ -84,8 +84,9 @@
                     <i class="nc-icon nc-diamond"></i>
                     <p>{{ __('Icons') }}</p>
                 </a>
-            </li>
-            <li class="{{ $elementActive == 'map' ? 'active' : '' }}">
+            </li> -->
+            
+            <!-- <li class="{{ $elementActive == 'map' ? 'active' : '' }}">
                 <a href="{{ route('page.index', 'map') }}">
                     <i class="nc-icon nc-pin-3"></i>
                     <p>{{ __('Maps') }}</p>

@@ -19,10 +19,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'UserController', ['except' => ['show']]);
-	Route::resource('kasir', 'KasirController', ['except' => ['show']]);
-	Route::resource('kategori', 'KategoriController', ['except' => ['show']]);
-	Route::resource('produk', 'ProdukController', ['except' => ['show']]);
+	Route::resource('user', 'UserController', ['except' => ['show']])->middleware('checkrole');
+	Route::resource('kasir', 'KasirController', ['except' => ['show']])->middleware('checkrole');
+	Route::resource('kategori', 'KategoriController', ['except' => ['show']])->middleware('checkrole');
+	Route::resource('produk', 'ProdukController', ['except' => ['show']])->middleware('checkrole');
 
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);

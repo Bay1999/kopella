@@ -15,7 +15,9 @@
                                     <h3 class="mb-0">{{ __('Kategori') }}</h3>
                                 </div>
                                 <div class="col-4 text-right">
+                                    @if(auth()->user()->isAdmin==1)
                                     <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary">{{ __('Add user') }}</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>

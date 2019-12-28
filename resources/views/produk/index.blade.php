@@ -50,6 +50,7 @@
                                             </td>
                                             <td>{{ $user->created_at->format('d/m/Y H:i') }}</td>
                                             <td class="text-right">
+                                                @if(auth()->user()->isAdmin==1)
                                                 <div class="dropdown">
                                                     <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="nc-align-left-2 nc-icon"></i>
@@ -70,6 +71,7 @@
                                                         @endif
                                                     </div>
                                                 </div>
+                                                @endif
                                             </td>
                                         </tr>
                                     @endforeach

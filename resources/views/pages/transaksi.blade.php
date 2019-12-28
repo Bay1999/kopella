@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header d-flex">
+                    <div class="card-header">
                         <h5 class="card-title"> Harga Total</h5>
-                        <h5 class="card-title text-right"> Rp 30.000</h5>
+                        <h4 class="card-title text-right"> Rp 30.000</h4>
                     </div>
                 </div>
             </div>

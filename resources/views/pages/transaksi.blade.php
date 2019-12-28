@@ -88,7 +88,9 @@
                                                     Rp 30.000
                                                 </td>
                                                 <td class="text-center">
-                                                    <i class="nc-icon nc-delete"></i>
+                                                    <button class="btn btn-sm btn-danger">
+                                                        <i class="nc-icon nc-basket"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                         </tbody>

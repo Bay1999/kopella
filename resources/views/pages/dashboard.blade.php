@@ -5,7 +5,6 @@
 
 @section('content')
     <div class="content">
-        <div class="row">
         <div class="panel-body">
                     @if (session('error'))
                         <div class="alert alert-success">

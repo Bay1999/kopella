@@ -5,16 +5,6 @@
 
 @section('content')
     <div class="content">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title"> Harga Total</h5>
-                        <h4 class="card-title text-right"> Rp 30.000</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="row">
 
@@ -43,44 +33,71 @@
             </div>
 
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title"> Keranjang</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <!-- <div class="card-header">
+                                <p class="card-title"> Rp 30.000</p>
+                            </div> -->
+                            <div class="card-body">
+                                <table class="table">
+                                    <tbody>
+                                        <p>Harga Total</p>
+                                        <tr>
+                                            <td class="text-right">
+                                               <h4 class="mt-0 mb-0">Rp 30.000</h4>
+                                            </td> 
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead class=" text-primary">
-                                    <th>
-                                        Barang
-                                    </th>
-                                    <th class="text-center">
-                                        Jumlah
-                                    </th>
-                                    <th class="text-right">
-                                        Harga
-                                    </th>
-                                    <th class="text-center">
-                                        Action
-                                    </th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            Dakota Rice
-                                        </td>
-                                        <td class="text-center">
-                                            1
-                                        </td>
-                                        <td class="text-right">
-                                            Rp 30.000
-                                        </td>
-                                        <td class="text-center">
-                                            <i class="nc-icon nc-settings-gear-65"></i>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title"> Keranjang</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class=" text-primary">
+                                            <th>
+                                                Barang
+                                            </th>
+                                            <th class="text-center">
+                                                Jumlah
+                                            </th>
+                                            <th class="text-right">
+                                                Harga
+                                            </th>
+                                            <th class="text-center">
+                                                Action
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Dakota Rice
+                                                </td>
+                                                <td class="text-center">
+                                                    1
+                                                </td>
+                                                <td class="text-right">
+                                                    Rp 30.000
+                                                </td>
+                                                <td class="text-center">
+                                                    <i class="nc-icon nc-delete"></i>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="text-right pr-5">
+                                        <button type="submit" class="btn btn-info mt-4">{{ __('Beli') }}</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +25,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('kasir', 'KasirController', ['except' => ['show']]);
 	Route::resource('kategori', 'KategoriController', ['except' => ['show']]);
 	Route::resource('produk', 'ProdukController', ['except' => ['show']]);
+	Route::get('transaksi', 'ProductController@index');
 
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
